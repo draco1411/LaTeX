@@ -1,0 +1,51 @@
+%indent & slash
+\usepackage{changepage} 
+\usepackage{ulem} 
+
+%image Packages
+\usepackage{listings}
+\usepackage{graphicx}
+
+%math Packages
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+% makes a center box,, slightly different from the boxed env.
+\newenvironment{cbox}
+    {\begin{center}
+    \begin{tabular}{|p{0.7\textwidth}|}
+    \hline
+    }
+    { 
+    \\\hline
+    \end{tabular} 
+    \end{center}
+}
+
+%Gives a slash fraction
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+
+%theorem Packages
+\newtheorem*{theorem}{Question 25}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[subsection]
+\newtheorem*{remark}{Remark}
+\theoremstyle{remark}
+
+
+\newenvironment{ranger}
+    {
+        \begin{adjustwidth}{1.5cm}{}
+        \vspace{.5cm}
+        \setstretch{1.5}
+        $
+    }
+    {
+        $
+        \vspace{.5cm}
+        \end{adjustwidth}
+    }
+    
+
+
