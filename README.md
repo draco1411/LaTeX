@@ -1,12 +1,3 @@
 # LaTeX
-All my LaTeX related code, *including the .sty file* and many of my homeworks.
+Sadly, many of the projects I had on here I had to make private to be in accordance with UW-Madison's academic integrity expectation.
 
-**As of 3/29/22, the math that's included is:**
-- Proofs from Discrete Math
-
-Things to add in the near future:
-- Proofs from Calculus I, II, III 
-- Elementaty Proofs from Intermediat Real Anaysis (Ludwig Text)
-- Proofs from Linear Algebra
-
-Please note, many teachers use the same homework problems semester after semester, so I've removed the section and problem numbers.
