@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{inter} 
+\renewcommand*\familydefault{\sfdefault}
+
+
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=1.8cm,
+    bottom=1in,
+    left=2.5cm,
+    right=2.5cm
+}
+
+\setcounter{secnumdepth}{0} % remove section numbering
+\pdfgentounicode=1 % make ATS friendly
+
+\usepackage{enumitem}
+\setlist[itemize]{
+    noitemsep,
+    left=2em
+}
+\setlist[description]{itemsep=0pt}
+\setlist[enumerate]{align=left}
+\usepackage[dvipsnames]{xcolor}
+\colorlet{icnclr}{gray}
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\color{Sepia}\large\fontseries{black}\selectfont\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\fontseries{bold}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\color{gray}\fontseries{bold}\selectfont}{}{}{}
+
+\usepackage{xhfill} 
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{1pt}[gray]} % add rule after title in .5 x-height 
+
+\newif\ifRemVS % remove vspace between \section & \subsection
+\newcommand{\rvs}{
+    \ifRemVS
+        \vspace{-1.5ex}
+    \fi
+    \global\RemVSfalse
+}
+
+\usepackage{fontawesome5}
+
+\usepackage[bookmarks=false]{hyperref} % [imp!]
+\hypersetup{ 
+    colorlinks=true,
+    urlcolor=Sepia,
+    pdftitle={My Resume},
+}
+
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}	
+\fancyhf{}							
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+
+%== HEADER ==%
+\begin{center}      
+    {\fontsize{20}{20}\selectfont Jack Brolin} \\ \bigskip
+
+    {\color{icnclr}\faMapMarker} Madison, Wisconsin\quad 
+    {\color{icnclr}\faEnvelope[regular]} \href{mailto:myaname@email.com}{jack.andrews1411@gmail.com} \quad
+    {\color{icnclr}\faIcon{mobile-alt}} \href{tel:+920000000000}{+1 608 977 2973} \newline
+    % You can also put your LinkedIn or website address
+    {\color{icnclr}\faGithub} \href{https://github.com/draco1411}{Github}
+    
+\end{center}
+%==============
+%==============
+%==============
+\section{About me}
+about me
+ 
+\section{Education}
+\subsection{B.S. in Mathematics \hfill \normalfont \textit{May 2024}}
+\subsubsection{University of Wisconsin - Madison}
+\begin{itemize}
+    \item [$\bullet$] School work related to the job I want 
+\end{itemize}
+
+\section{Previous Employment}
+\subsection{Job Title \hfill \normalfont \textit{Duration and dates}} % JOB
+\subsubsection{Name of company - Location, State} %Location 
+
+
+\section{Other}
+\subsection{Eagle Scout \hfill \normalfont \textit{2019}}
+\begin{itemize}
+    \item [$\bullet$] Achieved the highest rank in Boy Scouts. Service project involved invasive species management in a
+        wildlife area
+\end{itemize}
+\end{document}
+
