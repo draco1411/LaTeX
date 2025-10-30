@@ -1,3 +1,5 @@
 # LaTeX
-Sadly, many of the projects I had on here I had to make private to be in accordance with UW-Madison's academic integrity expectation.
+Contains the boilerplate for several common laTeX documents I use on the regular 
 
+The file `all.snippets`  contains the contents of gen_math and mla set as an Ultisnips (Vim) shortcut.   
+The links are to `make` and `mla` with `<TAB>` as the trigger.  
