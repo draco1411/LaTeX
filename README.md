@@ -10,3 +10,5 @@ Note that Ultisnipps placeholders are left intact in this document and thus won'
 or avoided all together. 
 
 pdfLaTeX (TeX Live 2025) is the compiler associated with this code. 
+
+$ x = \frac{1}{2} $
